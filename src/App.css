@@ -1,20 +1,10 @@
+/* src/App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-image: linear-gradient(to right, #1e163c, #082346);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +14,40 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+svg {
+  background-image: linear-gradient(to right, #1e163c, #082346);
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  width: 450px; /* Adjust the width as needed */
+  height: 550px; /* Adjust the height as needed */
+  background-image: linear-gradient(to right, #120d24, #061931);
+  border: 2px solid #ffffff; /* Border of the card */
+  border-radius: 10px; /* Border radius to make the corners rounded */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Box shadow for a lifted effect */
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* Adjust the gap between elements */
+}
+
+.containerCard {
+  display: flex;
+  flex-direction: row; /* Arrange items horizontally */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px;
 }
