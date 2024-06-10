@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.css';
 import DfsMaze from './dfs_maze.js';
-import Dropdown from './dropdown.js';
+import Dropdown from './dropdown.tsx';
 function App() {
   const rows = 20;
   const cols = 20;
@@ -16,10 +16,6 @@ function App() {
           <div class="card">
             <DfsMaze rows={rows} cols={cols} cellSize={cellSize} />
           </div>
-          <Dropdown></Dropdown>
-          {/* <div class="card">
-            <DfsMaze rows={rows} cols={cols} cellSize={cellSize} />
-          </div> */}
         </div>
       </header>
     </div>
